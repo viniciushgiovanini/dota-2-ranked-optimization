@@ -8,6 +8,7 @@ class AlgoritmoGenetico():
         self.populacao = []
         self.geracao = 0
         self.melhor_solucao = 0
+        self.lista_de_solucoes = []
 
     def inicializa_populacao(self, jogadores):
         '''
@@ -81,6 +82,9 @@ class AlgoritmoGenetico():
 
         self.ordena_populacao()
 
+        self.melhor_solucao = self.populacao[0]
+        self.lista_de_solucoes.append(self.melhor_solucao.nota_avaliacao)
+
         self.visualiza_geracao()
 
         for geracao in range(numero_geracoes):
@@ -107,6 +111,7 @@ class AlgoritmoGenetico():
             self.visualiza_geracao()
 
             melhor = self.populacao[0]
+            self.lista_de_solucoes.append(melhor.nota_avaliacao)
             self.melhor_individuo(melhor)
 
         print("#########################################\n#             MELHOR SOLUCAO            #\n#########################################\n")

@@ -4,8 +4,8 @@
 import pandas as pd
 import pickle
 from Class.player import Player
-from Class.individuo import Individuo
 from Class.genetic import AlgoritmoGenetico
+import matplotlib.pyplot as plt
 
 csv_path = "data/player_ratings_teste.csv"
 
@@ -55,13 +55,19 @@ if __name__ == "__main__":
     # Hyper Parametros #
     ####################
 
-    player_list = pre_processamento_inicial()
-    # player_list = pre_processamento_realizada()
+    # player_list = pre_processamento_inicial()
+    player_list = pre_processamento_realizada()
 
     print(f'Quantidade de registros {len(player_list)}')
 
-    tamanho_populacao = 20
+    tamanho_populacao = 2000
+    numero_de_geracoes = 100
+    taxa_de_mutacao = 0.1
 
     ag = AlgoritmoGenetico(tamanho_populacao=tamanho_populacao)
-    ag.resolver(taxa_mutacao=0.1, numero_geracoes=20,
+    ag.resolver(taxa_mutacao=taxa_de_mutacao, numero_geracoes=numero_de_geracoes,
                 lista_jogadores=player_list)
+
+    plt.plot(ag.lista_de_solucoes)
+    plt.title("Lista de SoluçÕes Partida Dota 2")
+    plt.savefig("resultados_algoritmo_genético")
