@@ -6,7 +6,7 @@ import pickle
 from Class.player import Player
 from Class.individuo import Individuo
 
-csv_path = "data/player_ratings.csv"
+csv_path = "data/player_ratings_teste.csv"
 
 #######################
 #  Pre-Processamento  #
@@ -50,32 +50,24 @@ def pre_processamento_realizada():
 
 if __name__ == "__main__":
 
-    # player_list = pre_processamento_inicial()
-    player_list = pre_processamento_realizada()
+    player_list = pre_processamento_inicial()
+    # player_list = pre_processamento_realizada()
 
     print(f'Quantidade de registros {len(player_list)}')
 
-    player_list[-1].visualizarJogador()
+    individuo1 = Individuo(jogadores=player_list)
+    individuo1.avaliacao()
 
-    total_wins = []
-    total_matches = []
-    trueskill_mu = []
-    trueskill_sigma = []
+    individuo2 = Individuo(jogadores=player_list)
+    individuo2.avaliacao()
 
-    for each in player_list:
-        total_wins.append(each.getTotalWins())
-        total_matches.append(each.getTotalWins())
-        trueskill_mu.append(each.getTrueskillmu())
-        trueskill_sigma.append(each.getTrueskillsigma())
+    # print(f"Cromossomo individuo 1: {individuo1.cromossomos}")
 
-    individuos1 = Individuo(total_wins=total_wins, total_matches=total_matches,
-                            skill_mu=trueskill_mu, skill_sigma=trueskill_sigma)
+    # print(f"Cromossomo individuo 2: {individuo2.cromossomos}")
 
-    print(f"Quantidade de Cromossomos: {len(individuos1.cromossomos)}")
+    # crossover = individuo1.crossover(individuo2)
+    # print(f"Cromossomo crossover: {crossover[0].cromossomos}")
 
-    cont = 0
-    for each in individuos1.cromossomos:
-        if each == 1:
-            cont = cont + 1
+    # individuo1.mutacao(taxa_mutacao=0.25)
 
-    print(f"Quantidade de jogadores que vão {cont}")
+    str("")
