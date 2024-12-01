@@ -18,7 +18,6 @@ class Individuo():
         Retorna:
         list: Retorna a lista de 2 inidividuos filhos 
         """
-
         corte = round(random.random() * len(self.cromossomos))
 
         filho1 = outro_individuo.cromossomos[0:corte] + \
@@ -37,10 +36,14 @@ class Individuo():
 
     def mutacao(self, taxa_mutacao):
         """
-        Realiza a mutacao do gene do vetor do cromossomo
+        Realiza a mutação do gene do vetor do cromossomo e garante que
+        exatamente 10 elementos do cromossomo sejam 1.
+
+        Args:
+            taxa_mutacao (float): Taxa de probabilidade para ocorrer mutação.
 
         Retorna:
-        obj: retorna o próprio objeto
+            obj: retorna o próprio objeto.
         """
 
         for i in range(len(self.cromossomos)):
@@ -49,6 +52,20 @@ class Individuo():
                     self.cromossomos[i] = 0
                 else:
                     self.cromossomos[i] = 1
+
+        selecionados = [i for i, gene in enumerate(
+            self.cromossomos) if gene == 1]
+        nao_selecionados = [i for i, gene in enumerate(
+            self.cromossomos) if gene == 0]
+
+        while len(selecionados) > 10:
+            indice_para_remover = selecionados.pop()
+            self.cromossomos[indice_para_remover] = 0
+
+        while len(selecionados) < 10:
+            indice_para_adicionar = nao_selecionados.pop()
+            self.cromossomos[indice_para_adicionar] = 1
+            selecionados.append(indice_para_adicionar)
 
         return self
 
@@ -73,7 +90,7 @@ class Individuo():
 
         media_mu, media_sigma = self.calcularMediaSkill(time1, time2)
 
-        self.nota_avaliacao = media_mu - 0.3 * media_sigma
+        self.nota_avaliacao = round(media_mu - 0.5 * media_sigma, 2)
 
     def calcularMediaSkill(self, time1, time2):
         """
@@ -106,9 +123,9 @@ class Individuo():
         media_trueskill_mu_time2_sigma = media_trueskill_mu_time2_sigma / \
             len(time2)
 
-        return round(abs(
-            media_trueskill_mu_time1_mu - media_trueskill_mu_time2_mu), 2), round(abs(
-                media_trueskill_mu_time1_sigma - media_trueskill_mu_time2_sigma), 2)
+        return abs(
+            media_trueskill_mu_time1_mu - media_trueskill_mu_time2_mu), abs(
+                media_trueskill_mu_time1_sigma - media_trueskill_mu_time2_sigma)
 
     def visualizarGenesSelecionados(self, players_list):
         """

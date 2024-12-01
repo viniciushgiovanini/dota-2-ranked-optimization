@@ -5,6 +5,7 @@ import pandas as pd
 import pickle
 from Class.player import Player
 from Class.individuo import Individuo
+from Class.genetic import AlgoritmoGenetico
 
 csv_path = "data/player_ratings_teste.csv"
 
@@ -50,24 +51,17 @@ def pre_processamento_realizada():
 
 if __name__ == "__main__":
 
+    ####################
+    # Hyper Parametros #
+    ####################
+
     player_list = pre_processamento_inicial()
     # player_list = pre_processamento_realizada()
 
     print(f'Quantidade de registros {len(player_list)}')
 
-    individuo1 = Individuo(jogadores=player_list)
-    individuo1.avaliacao()
+    tamanho_populacao = 20
 
-    individuo2 = Individuo(jogadores=player_list)
-    individuo2.avaliacao()
-
-    # print(f"Cromossomo individuo 1: {individuo1.cromossomos}")
-
-    # print(f"Cromossomo individuo 2: {individuo2.cromossomos}")
-
-    # crossover = individuo1.crossover(individuo2)
-    # print(f"Cromossomo crossover: {crossover[0].cromossomos}")
-
-    # individuo1.mutacao(taxa_mutacao=0.25)
-
-    str("")
+    ag = AlgoritmoGenetico(tamanho_populacao=tamanho_populacao)
+    ag.resolver(taxa_mutacao=0.1, numero_geracoes=20,
+                lista_jogadores=player_list)
