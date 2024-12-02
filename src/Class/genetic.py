@@ -10,6 +10,7 @@ class AlgoritmoGenetico():
         self.geracao = 0
         self.melhor_solucao = 0
         self.lista_de_solucoes = []
+        self.todas_solucoes_por_geracao = []
 
     def inicializa_populacao(self, jogadores):
         '''
@@ -65,6 +66,41 @@ class AlgoritmoGenetico():
             i += 1
         return pai
 
+    def visualizar_lista_melhores_resultados(self):
+
+        self.todas_solucoes_por_geracao.sort(
+            key=lambda x: x.nota_avaliacao, reverse=True)
+
+        low_matches = []
+        mid_matches = []
+        high_matches = []
+
+        for solucao in self.todas_solucoes_por_geracao:
+
+            if solucao.nota_avaliacao <= 4:
+                low_matches.append(solucao)
+            elif solucao.nota_avaliacao > 4 and solucao.nota_avaliacao <= 5:
+                mid_matches.append(solucao)
+            elif solucao.nota_avaliacao > 5:
+                high_matches.append(solucao)
+
+        print("###################\n#Partida Altas#\n###################\n")
+
+        for each in high_matches:
+            print(
+                f"Partidas Altas --> Geracao: {each.geracao} Nota da Partida: {each.nota_avaliacao}\n")
+
+        print("###################\n#Partida Medias#\n###################\n")
+
+        for each in mid_matches:
+            print(
+                f"Partidas Medias --> Geracao: {each.geracao} Nota da Partida: {each.nota_avaliacao}\n")
+
+        print("###################\n#Partida Baixas#\n###################\n")
+        for each in low_matches:
+            print(
+                f"Partidas Baixas --> Geracao: {each.geracao} Nota da Partida: {each.nota_avaliacao}\n")
+
     def visualiza_geracao(self):
         melhor = self.populacao[0]
         print(f"Geração: {melhor.geracao}")
@@ -112,6 +148,9 @@ class AlgoritmoGenetico():
             self.visualiza_geracao()
 
             melhor = self.populacao[0]
+
+            self.todas_solucoes_por_geracao.append(melhor)
+
             self.lista_de_solucoes.append(melhor.nota_avaliacao)
             self.melhor_individuo(melhor)
 
@@ -120,3 +159,5 @@ class AlgoritmoGenetico():
             f"Melhor Solucao --> \nGeracao: {self.melhor_solucao.geracao}\nNota da Partida: {self.melhor_solucao.nota_avaliacao}\n")
         self.melhor_solucao.visualizarGenesSelecionados(
             players_list=lista_jogadores)
+
+        self.visualizar_lista_melhores_resultados()
