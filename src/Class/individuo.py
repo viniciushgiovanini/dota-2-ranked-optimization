@@ -59,13 +59,16 @@ class Individuo():
             self.cromossomos) if gene == 0]
 
         while len(selecionados) > 10:
-            indice_para_remover = selecionados.pop()
-            self.cromossomos[indice_para_remover] = 0
+
+            elemento_aleatorio = random.choice(selecionados)
+            self.cromossomos[elemento_aleatorio] = 0
+            selecionados.remove(elemento_aleatorio)
 
         while len(selecionados) < 10:
-            indice_para_adicionar = nao_selecionados.pop()
-            self.cromossomos[indice_para_adicionar] = 1
-            selecionados.append(indice_para_adicionar)
+
+            elemento_aleatorio = random.choice(nao_selecionados)
+            self.cromossomos[elemento_aleatorio] = 1
+            selecionados.append(elemento_aleatorio)
 
         return self
 
