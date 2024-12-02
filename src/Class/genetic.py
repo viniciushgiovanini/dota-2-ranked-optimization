@@ -1,4 +1,5 @@
 import random
+import pickle
 from Class.individuo import Individuo
 
 
@@ -69,7 +70,7 @@ class AlgoritmoGenetico():
         print(f"Geração: {melhor.geracao}")
         print(
             f"Nota da Partida de Dota 2: {melhor.nota_avaliacao}")
-        print(f"Cromossomos: {melhor.cromossomos}")
+        # print(f"Cromossomos: {melhor.cromossomos}")
 
         print("\n-----X-----\n")
 
