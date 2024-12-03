@@ -7,17 +7,17 @@ import matplotlib.pyplot as plt
 from tensorflow.keras.metrics import MeanAbsoluteError
 from tensorflow.keras.losses import MeanSquaredError
 
-################################################################
-# A REDE TEM QUE CLASSIFICAR O TRUESKILL_MU e NAO O impact_SCORE
-################################################################
+##################################
+# A REDE CLASSIFICA O TRUESKILL_MU
+##################################
 
 
 data = pd.read_csv("data/player_treinamento.csv")
 
-data["impact_score"] = data["trueskill_mu"] - 0.5 * data["trueskill_sigma"]
+# data["impact_score"] = data["trueskill_mu"] - 0.5 * data["trueskill_sigma"]
 
-X = data[['total_wins', 'total_matches', 'trueskill_mu', 'trueskill_sigma']]
-y = data["impact_score"]
+X = data.drop('trueskill_mu', axis=1)
+y = data[['trueskill_mu',]]
 
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42)
@@ -28,9 +28,12 @@ X_test = scaler.transform(X_test)
 
 
 model = Sequential([
-    Dense(64, input_dim=X_train.shape[1], activation='relu'),
+    Dense(256, input_dim=X_train.shape[1], activation='relu'),
+    Dense(128, activation='relu'),
+    Dense(64, activation='relu'),
     Dense(32, activation='relu'),
     Dense(16, activation='relu'),
+    Dense(8, activation='relu'),
     Dense(1)
 ])
 
@@ -39,7 +42,7 @@ model.compile(optimizer='adam', loss=MeanSquaredError(),
 
 
 history = model.fit(X_train, y_train, validation_split=0.2,
-                    epochs=5, batch_size=16, verbose=1)
+                    epochs=200, batch_size=32, verbose=1)
 
 
 model.save("models/shurupitas.h5")
