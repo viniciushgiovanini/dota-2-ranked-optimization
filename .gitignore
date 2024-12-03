@@ -166,3 +166,4 @@ cython_debug/
 data/archive.zip
 data/lista_players.pkl
 player_ratings_table.txt
+models/*
