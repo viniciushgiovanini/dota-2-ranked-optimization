@@ -88,47 +88,30 @@ class Individuo():
             if len(jogadores_selecionados) == 10:
                 break
 
-        time1 = jogadores_selecionados[:5]
-        time2 = jogadores_selecionados[5:]
-
-        media_mu, media_sigma = self.calcularMediaSkill(time1, time2)
+        media_mu, media_sigma = self.calcularMediaSkill(jogadores_selecionados)
 
         self.nota_avaliacao = round(media_mu - 0.5 * media_sigma, 2)
 
-    def calcularMediaSkill(self, time1, time2):
+    def calcularMediaSkill(self, jogadores_selecionados):
         """
         Calcular Media TrueSkill entre 2 times
 
         Entrada:
-          list - time1: Lista de Players
-          list - time2: Lista de Players
+          list - jogadores_selecionados
 
         Retorna:
         int: Media entre 2 times de TrueSkill MU
         int: Media entre 2 time de TrueSkill Sigma
         """
 
-        media_trueskill_mu_time1_mu = 0
-        media_trueskill_mu_time1_sigma = 0
-        for each_jogador1 in time1:
-            media_trueskill_mu_time1_mu += each_jogador1.getTrueskillmu()
-            media_trueskill_mu_time1_sigma += each_jogador1.getTrueskillsigma()
-        media_trueskill_mu_time1_mu = media_trueskill_mu_time1_mu / len(time1)
-        media_trueskill_mu_time1_sigma = media_trueskill_mu_time1_sigma / \
-            len(time1)
+        media_mu = 0
+        media_sigma = 0
 
-        media_trueskill_mu_time2_mu = 0
-        media_trueskill_mu_time2_sigma = 0
-        for each_jogador2 in time2:
-            media_trueskill_mu_time2_mu += each_jogador2.getTrueskillmu()
-            media_trueskill_mu_time2_sigma += each_jogador2.getTrueskillsigma()
-        media_trueskill_mu_time2_mu = media_trueskill_mu_time2_mu / len(time2)
-        media_trueskill_mu_time2_sigma = media_trueskill_mu_time2_sigma / \
-            len(time2)
+        for jogador in jogadores_selecionados:
+            media_mu += jogador.getTrueskillmu()
+            media_sigma += jogador.getTrueskillsigma()
 
-        return abs(
-            media_trueskill_mu_time1_mu - media_trueskill_mu_time2_mu), abs(
-                media_trueskill_mu_time1_sigma - media_trueskill_mu_time2_sigma)
+        return abs(media_mu/10), abs(media_sigma/10)
 
     def visualizarGenesSelecionados(self, players_list):
         """

@@ -8,7 +8,7 @@ from Class.genetic import AlgoritmoGenetico
 import matplotlib.pyplot as plt
 import time
 
-csv_path = "data/player_ratings.csv"
+csv_path = "data/player_teste.csv"
 
 #######################
 #  Pre-Processamento  #
@@ -59,8 +59,8 @@ if __name__ == "__main__":
     ####################
 
     start_time = time.time()
-    # player_list = pre_processamento_inicial()
-    player_list = pre_processamento_realizada()
+    player_list = pre_processamento_inicial()
+    # player_list = pre_processamento_realizada()
 
     print(f'Quantidade de registros {len(player_list)}')
 
@@ -82,4 +82,4 @@ if __name__ == "__main__":
 
     plt.plot(ag.lista_de_solucoes)
     plt.title("Lista de SoluçÕes Partida Dota 2")
-    plt.savefig("resultados_algoritmo_genético")
+    plt.savefig("graph/resultados_algoritmo_genético")

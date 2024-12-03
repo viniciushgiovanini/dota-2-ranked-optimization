@@ -77,11 +77,11 @@ class AlgoritmoGenetico():
 
         for solucao in self.todas_solucoes_por_geracao:
 
-            if solucao.nota_avaliacao <= 4:
+            if solucao.nota_avaliacao <= 24.5:
                 low_matches.append(solucao)
-            elif solucao.nota_avaliacao > 4 and solucao.nota_avaliacao <= 5:
+            elif solucao.nota_avaliacao > 24.5 and solucao.nota_avaliacao <= 26:
                 mid_matches.append(solucao)
-            elif solucao.nota_avaliacao > 5:
+            elif solucao.nota_avaliacao > 26:
                 high_matches.append(solucao)
 
         print("###################\n#Partida Altas#\n###################\n")
