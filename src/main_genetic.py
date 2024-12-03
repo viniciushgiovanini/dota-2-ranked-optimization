@@ -82,4 +82,4 @@ if __name__ == "__main__":
 
     plt.plot(ag.lista_de_solucoes)
     plt.title("Lista de SoluçÕes Partida Dota 2")
-    plt.savefig("resultados_algoritmo_genético")
+    plt.savefig("graph/resultados_algoritmo_genético")
