@@ -1,25 +1,47 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-from sklearn.preprocessing import StandardScaler
+import numpy as np
 from tensorflow.keras.models import load_model
+from sklearn.preprocessing import StandardScaler
+import random
+from itertools import combinations
 
 model = load_model("models/shurupitas.h5")
 
-data = pd.read_csv("data/player_ratings.csv")
-data = data[data["total_matches"] >= 10]
-real_values = data["truskill_mu"].values
+test = pd.read_csv("data/player_teste.csv")
 
-test = data.iloc[40000:]
-test = test[['total_wins', 'total_matches', 'trueskill_mu', 'trueskill_sigma']].drop(columns=["trueskill_mu"])
+X_test = test[['total_wins', 'total_matches',
+               'trueskill_mu', 'trueskill_sigma']]
+
 
 scaler = StandardScaler()
-validation_data = scaler.fit_transform(test)
+X_test_scaled = scaler.fit_transform(X_test)
 
-predictions = model.predict(test)
+# O impact score é a media do player entre trueskill mu e sigma penalizado
+test['impact_score'] = model.predict(X_test_scaled).flatten()
 
-plt.title('Comparação entre Valores Reais e Previstos')
-plt.xlabel('Índice')
-plt.ylabel('Trueskill Mu')
-plt.legend()
-plt.grid(True)
-plt.savefig('teste_rede.png')
+# Criar combinações de 10 jogadores
+group_size = 10
+# indices = list(test.index)
+# groups = list(combinations(indices, group_size))
+
+# Avaliar os grupos
+best_group = None
+best_score = -np.inf
+
+
+random.seed(42)
+sampled_groups = [random.sample(list(test.index), group_size)
+                  for _ in range(20)]
+
+for group in sampled_groups:
+    group_data = test.loc[group]
+    group_mu = group_data["trueskill_mu"].mean()
+    group_sigma = group_data["trueskill_sigma"].mean()
+    score = round(group_mu - 0.5 * group_sigma, 2)
+    if score > best_score:
+        best_score = score
+        best_group = group
+
+# Exibir o melhor grupo
+print("Melhor grupo (índices):", best_group)
+print("Melhor score:", best_score)
