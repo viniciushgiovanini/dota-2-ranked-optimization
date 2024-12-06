@@ -64,7 +64,7 @@ if __name__ == "__main__":
 
     print(f'Quantidade de registros {len(player_list)}')
 
-    tamanho_populacao = 10
+    tamanho_populacao = 20
     numero_de_geracoes = 100
     taxa_de_mutacao = 0.1
 
@@ -81,5 +81,5 @@ if __name__ == "__main__":
     print(f"Tempo de execução: {tempo_execucao_minutos:.6f} minutos")
 
     plt.plot(ag.lista_de_solucoes)
-    plt.title("Lista de SoluçÕes Partida Dota 2")
+    plt.title("Lista de Soluções Partida Dota 2")
     plt.savefig("graph/resultados_algoritmo_genético")
