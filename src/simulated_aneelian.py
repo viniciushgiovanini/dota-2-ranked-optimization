@@ -5,12 +5,14 @@ import random
 np.random.seed(42)
 df = pd.read_csv("data/player_teste.csv")
 
+
 def calcular_score(jogadores):
     media_mu = jogadores["trueskill_mu"].mean()
     media_sigma = jogadores["trueskill_sigma"].mean()
     return media_mu - 0.5 * media_sigma
 
-def simulated_annealing(df, team_size=10, max_iterations=1000, initial_temperature=100, cooling_rate=0.95):
+
+def simulated_annealing(df, team_size=10, initial_temperature=100, cooling_rate=0.95):
     current_team = df.sample(team_size)
     current_score = calcular_score(current_team)
 
@@ -19,7 +21,10 @@ def simulated_annealing(df, team_size=10, max_iterations=1000, initial_temperatu
 
     temperature = initial_temperature
 
-    for iteration in range(max_iterations):
+    while temperature > 0.1:
+
+        print(f"Valor atual da temperatura: {temperature}")
+
         new_team = current_team.copy()
         new_player = df.sample(1)
         replace_idx = random.randint(0, team_size - 1)
@@ -40,7 +45,9 @@ def simulated_annealing(df, team_size=10, max_iterations=1000, initial_temperatu
 
     return best_team, best_score
 
-melhor_time, melhor_score = simulated_annealing(df, team_size=10, max_iterations=1000)
+
+melhor_time, melhor_score = simulated_annealing(
+    df, team_size=10, initial_temperature=1000)
 
 print("Melhor score:", melhor_score)
 print("Melhor time:")
