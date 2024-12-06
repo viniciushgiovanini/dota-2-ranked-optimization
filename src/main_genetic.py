@@ -64,7 +64,7 @@ if __name__ == "__main__":
 
     print(f'Quantidade de registros {len(player_list)}')
 
-    tamanho_populacao = 10
+    tamanho_populacao = 20
     numero_de_geracoes = 100
     taxa_de_mutacao = 0.1
 

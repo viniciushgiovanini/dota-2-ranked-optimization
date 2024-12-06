@@ -71,35 +71,13 @@ class AlgoritmoGenetico():
         self.todas_solucoes_por_geracao.sort(
             key=lambda x: x.nota_avaliacao, reverse=True)
 
-        low_matches = []
-        mid_matches = []
-        high_matches = []
+        print("###############################\n")
+        print("# Lista das melhores soluções #\n")
+        print("###############################\n")
 
-        for solucao in self.todas_solucoes_por_geracao:
-
-            if solucao.nota_avaliacao <= 24.5:
-                low_matches.append(solucao)
-            elif solucao.nota_avaliacao > 24.5 and solucao.nota_avaliacao <= 26:
-                mid_matches.append(solucao)
-            elif solucao.nota_avaliacao > 26:
-                high_matches.append(solucao)
-
-        print("###################\n#Partida Altas#\n###################\n")
-
-        for each in high_matches:
+        for i, each in enumerate(self.todas_solucoes_por_geracao):
             print(
-                f"Partidas Altas --> Geracao: {each.geracao} Nota da Partida: {each.nota_avaliacao}\n")
-
-        print("###################\n#Partida Medias#\n###################\n")
-
-        for each in mid_matches:
-            print(
-                f"Partidas Medias --> Geracao: {each.geracao} Nota da Partida: {each.nota_avaliacao}\n")
-
-        print("###################\n#Partida Baixas#\n###################\n")
-        for each in low_matches:
-            print(
-                f"Partidas Baixas --> Geracao: {each.geracao} Nota da Partida: {each.nota_avaliacao}\n")
+                f"Partidas {i+1} --> Geracao: {each.geracao} Nota da Partida: {each.nota_avaliacao}\n")
 
     def visualiza_geracao(self):
         melhor = self.populacao[0]
