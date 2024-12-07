@@ -2,10 +2,12 @@ import pandas as pd
 import gdown
 import shutil
 
-
-id = "163sVkZHux_lEwvzFaxryftfnFuVKh0Aq"
-gdown.download(id=id, output="player_ratings.csv")
-shutil.move("player_ratings.csv", "data/")
+try:
+    id = "163sVkZHux_lEwvzFaxryftfnFuVKh0Aq"
+    gdown.download(id=id, output="player_ratings.csv")
+    shutil.move("player_ratings.csv", "data/")
+except:
+    print('Erro no download do dataset (player_ratings.csv)')
 
 df = pd.read_csv("data/player_ratings.csv")
 df = df[df["total_matches"] > 5]

@@ -26,19 +26,19 @@ python ./src/preprocessing.py
 - Para rodar o algoritmo Genético, o arquivo principal chama **main_genetic.py**, e as classes estão da pasta Class.
 
 ```
-python .\src\main_genetic.py
+python ./src/main_genetic.py
 ```
 
 - Para rodar o algoritmo B&B, o arquivo principal chama **main_bnb.py**.
 
 ```
-python .\src\main_bnb.py
+python ./src/main_bnb.py
 ```
 
 - Para rodar o algoritmo Simulated Annealing, o arquivo principal chama **simulated_aneelian.py**
 
 ```
-python .\src\simulated_aneelian.py
+python ./src/simulated_aneelian.py
 ```
 
 ## Resultados
