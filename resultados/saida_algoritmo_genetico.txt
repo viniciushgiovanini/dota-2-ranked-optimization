@@ -1,0 +1,792 @@
+Rodando algoritmo Genético
+Quantidade de registros 76501
+Geração: 0
+Nota da Partida de Dota 2: 25.48
+
+-----X-----
+
+Geração: 1
+Nota da Partida de Dota 2: 25.24
+
+-----X-----
+
+Geração: 2
+Nota da Partida de Dota 2: 25.1
+
+-----X-----
+
+Geração: 3
+Nota da Partida de Dota 2: 26.08
+
+-----X-----
+
+Geração: 4
+Nota da Partida de Dota 2: 26.15
+
+-----X-----
+
+Geração: 5
+Nota da Partida de Dota 2: 25.28
+
+-----X-----
+
+Geração: 6
+Nota da Partida de Dota 2: 26.21
+
+-----X-----
+
+Geração: 7
+Nota da Partida de Dota 2: 25.51
+
+-----X-----
+
+Geração: 8
+Nota da Partida de Dota 2: 24.83
+
+-----X-----
+
+Geração: 9
+Nota da Partida de Dota 2: 26.48
+
+-----X-----
+
+Geração: 10
+Nota da Partida de Dota 2: 24.98
+
+-----X-----
+
+Geração: 11
+Nota da Partida de Dota 2: 26.09
+
+-----X-----
+
+Geração: 12
+Nota da Partida de Dota 2: 25.97
+
+-----X-----
+
+Geração: 13
+Nota da Partida de Dota 2: 25.93
+
+-----X-----
+
+Geração: 14
+Nota da Partida de Dota 2: 24.77
+
+-----X-----
+
+Geração: 15
+Nota da Partida de Dota 2: 25.75
+
+-----X-----
+
+Geração: 16
+Nota da Partida de Dota 2: 26.83
+
+-----X-----
+
+Geração: 17
+Nota da Partida de Dota 2: 26.61
+
+-----X-----
+
+Geração: 18
+Nota da Partida de Dota 2: 26.19
+
+-----X-----
+
+Geração: 19
+Nota da Partida de Dota 2: 25.35
+
+-----X-----
+
+Geração: 20
+Nota da Partida de Dota 2: 25.16
+
+-----X-----
+
+Geração: 21
+Nota da Partida de Dota 2: 25.88
+
+-----X-----
+
+Geração: 22
+Nota da Partida de Dota 2: 25.3
+
+-----X-----
+
+Geração: 23
+Nota da Partida de Dota 2: 24.48
+
+-----X-----
+
+Geração: 24
+Nota da Partida de Dota 2: 25.82
+
+-----X-----
+
+Geração: 25
+Nota da Partida de Dota 2: 25.14
+
+-----X-----
+
+Geração: 26
+Nota da Partida de Dota 2: 24.87
+
+-----X-----
+
+Geração: 27
+Nota da Partida de Dota 2: 25.47
+
+-----X-----
+
+Geração: 28
+Nota da Partida de Dota 2: 25.38
+
+-----X-----
+
+Geração: 29
+Nota da Partida de Dota 2: 25.06
+
+-----X-----
+
+Geração: 30
+Nota da Partida de Dota 2: 24.24
+
+-----X-----
+
+Geração: 31
+Nota da Partida de Dota 2: 25.47
+
+-----X-----
+
+Geração: 32
+Nota da Partida de Dota 2: 24.43
+
+-----X-----
+
+Geração: 33
+Nota da Partida de Dota 2: 24.73
+
+-----X-----
+
+Geração: 34
+Nota da Partida de Dota 2: 25.99
+
+-----X-----
+
+Geração: 35
+Nota da Partida de Dota 2: 25.48
+
+-----X-----
+
+Geração: 36
+Nota da Partida de Dota 2: 26.39
+
+-----X-----
+
+Geração: 37
+Nota da Partida de Dota 2: 25.54
+
+-----X-----
+
+Geração: 38
+Nota da Partida de Dota 2: 25.83
+
+-----X-----
+
+Geração: 39
+Nota da Partida de Dota 2: 25.97
+
+-----X-----
+
+Geração: 40
+Nota da Partida de Dota 2: 25.74
+
+-----X-----
+
+Geração: 41
+Nota da Partida de Dota 2: 26.14
+
+-----X-----
+
+Geração: 42
+Nota da Partida de Dota 2: 25.93
+
+-----X-----
+
+Geração: 43
+Nota da Partida de Dota 2: 24.99
+
+-----X-----
+
+Geração: 44
+Nota da Partida de Dota 2: 25.62
+
+-----X-----
+
+Geração: 45
+Nota da Partida de Dota 2: 25.18
+
+-----X-----
+
+Geração: 46
+Nota da Partida de Dota 2: 25.51
+
+-----X-----
+
+Geração: 47
+Nota da Partida de Dota 2: 26.63
+
+-----X-----
+
+Geração: 48
+Nota da Partida de Dota 2: 25.42
+
+-----X-----
+
+Geração: 49
+Nota da Partida de Dota 2: 25.24
+
+-----X-----
+
+Geração: 50
+Nota da Partida de Dota 2: 25.62
+
+-----X-----
+
+Geração: 51
+Nota da Partida de Dota 2: 27.15
+
+-----X-----
+
+Geração: 52
+Nota da Partida de Dota 2: 26.73
+
+-----X-----
+
+Geração: 53
+Nota da Partida de Dota 2: 25.04
+
+-----X-----
+
+Geração: 54
+Nota da Partida de Dota 2: 26.32
+
+-----X-----
+
+Geração: 55
+Nota da Partida de Dota 2: 25.46
+
+-----X-----
+
+Geração: 56
+Nota da Partida de Dota 2: 25.46
+
+-----X-----
+
+Geração: 57
+Nota da Partida de Dota 2: 25.3
+
+-----X-----
+
+Geração: 58
+Nota da Partida de Dota 2: 26.04
+
+-----X-----
+
+Geração: 59
+Nota da Partida de Dota 2: 27.07
+
+-----X-----
+
+Geração: 60
+Nota da Partida de Dota 2: 26.07
+
+-----X-----
+
+Geração: 61
+Nota da Partida de Dota 2: 25.35
+
+-----X-----
+
+Geração: 62
+Nota da Partida de Dota 2: 24.62
+
+-----X-----
+
+Geração: 63
+Nota da Partida de Dota 2: 26.35
+
+-----X-----
+
+Geração: 64
+Nota da Partida de Dota 2: 24.77
+
+-----X-----
+
+Geração: 65
+Nota da Partida de Dota 2: 26.08
+
+-----X-----
+
+Geração: 66
+Nota da Partida de Dota 2: 25.26
+
+-----X-----
+
+Geração: 67
+Nota da Partida de Dota 2: 25.72
+
+-----X-----
+
+Geração: 68
+Nota da Partida de Dota 2: 26.65
+
+-----X-----
+
+Geração: 69
+Nota da Partida de Dota 2: 25.08
+
+-----X-----
+
+Geração: 70
+Nota da Partida de Dota 2: 25.54
+
+-----X-----
+
+Geração: 71
+Nota da Partida de Dota 2: 26.94
+
+-----X-----
+
+Geração: 72
+Nota da Partida de Dota 2: 26.09
+
+-----X-----
+
+Geração: 73
+Nota da Partida de Dota 2: 25.53
+
+-----X-----
+
+Geração: 74
+Nota da Partida de Dota 2: 25.11
+
+-----X-----
+
+Geração: 75
+Nota da Partida de Dota 2: 25.43
+
+-----X-----
+
+Geração: 76
+Nota da Partida de Dota 2: 26.29
+
+-----X-----
+
+Geração: 77
+Nota da Partida de Dota 2: 26.26
+
+-----X-----
+
+Geração: 78
+Nota da Partida de Dota 2: 25.22
+
+-----X-----
+
+Geração: 79
+Nota da Partida de Dota 2: 26.51
+
+-----X-----
+
+Geração: 80
+Nota da Partida de Dota 2: 26.38
+
+-----X-----
+
+Geração: 81
+Nota da Partida de Dota 2: 25.78
+
+-----X-----
+
+Geração: 82
+Nota da Partida de Dota 2: 26.5
+
+-----X-----
+
+Geração: 83
+Nota da Partida de Dota 2: 25.27
+
+-----X-----
+
+Geração: 84
+Nota da Partida de Dota 2: 26.99
+
+-----X-----
+
+Geração: 85
+Nota da Partida de Dota 2: 25.05
+
+-----X-----
+
+Geração: 86
+Nota da Partida de Dota 2: 27.05
+
+-----X-----
+
+Geração: 87
+Nota da Partida de Dota 2: 25.35
+
+-----X-----
+
+Geração: 88
+Nota da Partida de Dota 2: 26.34
+
+-----X-----
+
+Geração: 89
+Nota da Partida de Dota 2: 26.43
+
+-----X-----
+
+Geração: 90
+Nota da Partida de Dota 2: 25.58
+
+-----X-----
+
+Geração: 91
+Nota da Partida de Dota 2: 26.26
+
+-----X-----
+
+Geração: 92
+Nota da Partida de Dota 2: 25.75
+
+-----X-----
+
+Geração: 93
+Nota da Partida de Dota 2: 25.47
+
+-----X-----
+
+Geração: 94
+Nota da Partida de Dota 2: 25.83
+
+-----X-----
+
+Geração: 95
+Nota da Partida de Dota 2: 25.42
+
+-----X-----
+
+Geração: 96
+Nota da Partida de Dota 2: 26.61
+
+-----X-----
+
+Geração: 97
+Nota da Partida de Dota 2: 24.36
+
+-----X-----
+
+Geração: 98
+Nota da Partida de Dota 2: 24.71
+
+-----X-----
+
+Geração: 99
+Nota da Partida de Dota 2: 25.07
+
+-----X-----
+
+Geração: 100
+Nota da Partida de Dota 2: 26.74
+
+-----X-----
+
+#########################################
+#             MELHOR SOLUCAO            #
+#########################################
+
+Melhor Solucao --> 
+Geracao: 51
+Nota da Partida: 27.15
+
+ID: -8996343
+Wins: 15
+TS - MU: 27.38
+TS - Sigma: 5.89
+------X-----
+
+
+ID: -43010351
+Wins: 45
+TS - MU: 28.37
+TS - Sigma: 3.48
+------X-----
+
+
+ID: 72
+Wins: 190
+TS - MU: 30.39
+TS - Sigma: 1.89
+------X-----
+
+
+ID: -56573650
+Wins: 12
+TS - MU: 26.09
+TS - Sigma: 6.11
+------X-----
+
+
+ID: -66869359
+Wins: 10
+TS - MU: 35.25
+TS - Sigma: 6.45
+------X-----
+
+
+ID: 43487
+Wins: 36
+TS - MU: 26.07
+TS - Sigma: 4.37
+------X-----
+
+
+ID: -85590053
+Wins: 11
+TS - MU: 29.68
+TS - Sigma: 6.12
+------X-----
+
+
+ID: 222336
+Wins: 12
+TS - MU: 33.03
+TS - Sigma: 6.04
+------X-----
+
+
+ID: -101087180
+Wins: 14
+TS - MU: 33.46
+TS - Sigma: 5.92
+------X-----
+
+
+ID: 56796
+Wins: 18
+TS - MU: 27.71
+TS - Sigma: 5.61
+------X-----
+
+
+###############################
+
+# Lista das melhores soluções #
+
+###############################
+
+Partidas 1 --> Geracao: 51 Nota da Partida: 27.15
+
+Partidas 2 --> Geracao: 59 Nota da Partida: 27.07
+
+Partidas 3 --> Geracao: 86 Nota da Partida: 27.05
+
+Partidas 4 --> Geracao: 84 Nota da Partida: 26.99
+
+Partidas 5 --> Geracao: 71 Nota da Partida: 26.94
+
+Partidas 6 --> Geracao: 16 Nota da Partida: 26.83
+
+Partidas 7 --> Geracao: 100 Nota da Partida: 26.74
+
+Partidas 8 --> Geracao: 52 Nota da Partida: 26.73
+
+Partidas 9 --> Geracao: 68 Nota da Partida: 26.65
+
+Partidas 10 --> Geracao: 47 Nota da Partida: 26.63
+
+Partidas 11 --> Geracao: 17 Nota da Partida: 26.61
+
+Partidas 12 --> Geracao: 96 Nota da Partida: 26.61
+
+Partidas 13 --> Geracao: 79 Nota da Partida: 26.51
+
+Partidas 14 --> Geracao: 82 Nota da Partida: 26.5
+
+Partidas 15 --> Geracao: 9 Nota da Partida: 26.48
+
+Partidas 16 --> Geracao: 89 Nota da Partida: 26.43
+
+Partidas 17 --> Geracao: 36 Nota da Partida: 26.39
+
+Partidas 18 --> Geracao: 80 Nota da Partida: 26.38
+
+Partidas 19 --> Geracao: 63 Nota da Partida: 26.35
+
+Partidas 20 --> Geracao: 88 Nota da Partida: 26.34
+
+Partidas 21 --> Geracao: 54 Nota da Partida: 26.32
+
+Partidas 22 --> Geracao: 76 Nota da Partida: 26.29
+
+Partidas 23 --> Geracao: 77 Nota da Partida: 26.26
+
+Partidas 24 --> Geracao: 91 Nota da Partida: 26.26
+
+Partidas 25 --> Geracao: 6 Nota da Partida: 26.21
+
+Partidas 26 --> Geracao: 18 Nota da Partida: 26.19
+
+Partidas 27 --> Geracao: 4 Nota da Partida: 26.15
+
+Partidas 28 --> Geracao: 41 Nota da Partida: 26.14
+
+Partidas 29 --> Geracao: 11 Nota da Partida: 26.09
+
+Partidas 30 --> Geracao: 72 Nota da Partida: 26.09
+
+Partidas 31 --> Geracao: 3 Nota da Partida: 26.08
+
+Partidas 32 --> Geracao: 65 Nota da Partida: 26.08
+
+Partidas 33 --> Geracao: 60 Nota da Partida: 26.07
+
+Partidas 34 --> Geracao: 58 Nota da Partida: 26.04
+
+Partidas 35 --> Geracao: 34 Nota da Partida: 25.99
+
+Partidas 36 --> Geracao: 12 Nota da Partida: 25.97
+
+Partidas 37 --> Geracao: 39 Nota da Partida: 25.97
+
+Partidas 38 --> Geracao: 13 Nota da Partida: 25.93
+
+Partidas 39 --> Geracao: 42 Nota da Partida: 25.93
+
+Partidas 40 --> Geracao: 21 Nota da Partida: 25.88
+
+Partidas 41 --> Geracao: 38 Nota da Partida: 25.83
+
+Partidas 42 --> Geracao: 94 Nota da Partida: 25.83
+
+Partidas 43 --> Geracao: 24 Nota da Partida: 25.82
+
+Partidas 44 --> Geracao: 81 Nota da Partida: 25.78
+
+Partidas 45 --> Geracao: 15 Nota da Partida: 25.75
+
+Partidas 46 --> Geracao: 92 Nota da Partida: 25.75
+
+Partidas 47 --> Geracao: 40 Nota da Partida: 25.74
+
+Partidas 48 --> Geracao: 67 Nota da Partida: 25.72
+
+Partidas 49 --> Geracao: 44 Nota da Partida: 25.62
+
+Partidas 50 --> Geracao: 50 Nota da Partida: 25.62
+
+Partidas 51 --> Geracao: 90 Nota da Partida: 25.58
+
+Partidas 52 --> Geracao: 37 Nota da Partida: 25.54
+
+Partidas 53 --> Geracao: 70 Nota da Partida: 25.54
+
+Partidas 54 --> Geracao: 73 Nota da Partida: 25.53
+
+Partidas 55 --> Geracao: 7 Nota da Partida: 25.51
+
+Partidas 56 --> Geracao: 46 Nota da Partida: 25.51
+
+Partidas 57 --> Geracao: 35 Nota da Partida: 25.48
+
+Partidas 58 --> Geracao: 27 Nota da Partida: 25.47
+
+Partidas 59 --> Geracao: 31 Nota da Partida: 25.47
+
+Partidas 60 --> Geracao: 93 Nota da Partida: 25.47
+
+Partidas 61 --> Geracao: 55 Nota da Partida: 25.46
+
+Partidas 62 --> Geracao: 56 Nota da Partida: 25.46
+
+Partidas 63 --> Geracao: 75 Nota da Partida: 25.43
+
+Partidas 64 --> Geracao: 48 Nota da Partida: 25.42
+
+Partidas 65 --> Geracao: 95 Nota da Partida: 25.42
+
+Partidas 66 --> Geracao: 28 Nota da Partida: 25.38
+
+Partidas 67 --> Geracao: 19 Nota da Partida: 25.35
+
+Partidas 68 --> Geracao: 61 Nota da Partida: 25.35
+
+Partidas 69 --> Geracao: 87 Nota da Partida: 25.35
+
+Partidas 70 --> Geracao: 22 Nota da Partida: 25.3
+
+Partidas 71 --> Geracao: 57 Nota da Partida: 25.3
+
+Partidas 72 --> Geracao: 5 Nota da Partida: 25.28
+
+Partidas 73 --> Geracao: 83 Nota da Partida: 25.27
+
+Partidas 74 --> Geracao: 66 Nota da Partida: 25.26
+
+Partidas 75 --> Geracao: 1 Nota da Partida: 25.24
+
+Partidas 76 --> Geracao: 49 Nota da Partida: 25.24
+
+Partidas 77 --> Geracao: 78 Nota da Partida: 25.22
+
+Partidas 78 --> Geracao: 45 Nota da Partida: 25.18
+
+Partidas 79 --> Geracao: 20 Nota da Partida: 25.16
+
+Partidas 80 --> Geracao: 25 Nota da Partida: 25.14
+
+Partidas 81 --> Geracao: 74 Nota da Partida: 25.11
+
+Partidas 82 --> Geracao: 2 Nota da Partida: 25.1
+
+Partidas 83 --> Geracao: 69 Nota da Partida: 25.08
+
+Partidas 84 --> Geracao: 99 Nota da Partida: 25.07
+
+Partidas 85 --> Geracao: 29 Nota da Partida: 25.06
+
+Partidas 86 --> Geracao: 85 Nota da Partida: 25.05
+
+Partidas 87 --> Geracao: 53 Nota da Partida: 25.04
+
+Partidas 88 --> Geracao: 43 Nota da Partida: 24.99
+
+Partidas 89 --> Geracao: 10 Nota da Partida: 24.98
+
+Partidas 90 --> Geracao: 26 Nota da Partida: 24.87
+
+Partidas 91 --> Geracao: 8 Nota da Partida: 24.83
+
+Partidas 92 --> Geracao: 14 Nota da Partida: 24.77
+
+Partidas 93 --> Geracao: 64 Nota da Partida: 24.77
+
+Partidas 94 --> Geracao: 33 Nota da Partida: 24.73
+
+Partidas 95 --> Geracao: 98 Nota da Partida: 24.71
+
+Partidas 96 --> Geracao: 62 Nota da Partida: 24.62
+
+Partidas 97 --> Geracao: 23 Nota da Partida: 24.48
+
+Partidas 98 --> Geracao: 32 Nota da Partida: 24.43
+
+Partidas 99 --> Geracao: 97 Nota da Partida: 24.36
+
+Partidas 100 --> Geracao: 30 Nota da Partida: 24.24
+
+Tempo de execução: 5.732195 minutos
