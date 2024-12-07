@@ -35,8 +35,8 @@ def pre_processamento_inicial():
             row["total_matches"]), round(row["trueskill_mu"], 2), round(row["trueskill_sigma"], 2))
         player_list.append(player)
 
-    with open('data/lista_players.pkl', 'wb') as f:
-        pickle.dump(player_list, f)
+    # with open('data/lista_players.pkl', 'wb') as f:
+    #     pickle.dump(player_list, f)
 
     return player_list
 
@@ -59,6 +59,9 @@ if __name__ == "__main__":
     ####################
 
     start_time = time.time()
+
+    print("Rodando algoritmo Genético")
+
     player_list = pre_processamento_inicial()
     # player_list = pre_processamento_realizada()
 
